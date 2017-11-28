@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="3.0">
 	
 	<listener>
-		<listener-class>org.jboss.weld.environment.servlet.Listner</listener-class>
+		<listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
 	</listener>
 	
 	<resource-env-ref>

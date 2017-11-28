@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.algaworks.pedidovenda.model.Cliente;
@@ -18,15 +19,14 @@ public class PesquisaClientesBean implements Serializable{
 	
 	private List<Cliente> clientesFiltrados;
 	
-	
-	/*private Cliente cliente;
+	@Inject
+	Endereco endereco;
 	
 	@Inject
-	private Endereco endereco;*/
+	private Cliente cliente;
 	
 	public PesquisaClientesBean() {
 		clientesFiltrados = new ArrayList<Cliente>();
-		Cliente cliente = new Cliente();
 		
 		cliente = new Cliente();
 		cliente.setNome("Supermercado João das Couves Ltda");
@@ -52,8 +52,7 @@ public class PesquisaClientesBean implements Serializable{
 	
 	public List<Endereco> getEnderecos(){
 		List<Endereco> enderecosCliente = new ArrayList<Endereco>();
-		
-		Endereco endereco = new Endereco();
+				
 		endereco.setLogradouro("Rua das Pedras Grandes Azuis");
 		endereco.setNumero("1234");
 		endereco.setComplemento("Ap 1022");
