@@ -22,10 +22,11 @@ public class PesquisaClientesBean implements Serializable{
 	/*private Cliente cliente;
 	
 	@Inject
-	private Endereco endereco;
+	private Endereco endereco;*/
 	
 	public PesquisaClientesBean() {
 		clientesFiltrados = new ArrayList<Cliente>();
+		Cliente cliente = new Cliente();
 		
 		cliente = new Cliente();
 		cliente.setNome("Supermercado João das Couves Ltda");
@@ -34,20 +35,20 @@ public class PesquisaClientesBean implements Serializable{
 		
 		clientesFiltrados.add(cliente);
 		
-		//cliente = new Cliente();
-		//cliente.setNome("Maria Conceição da Abadia");
+		cliente = new Cliente();
+		cliente.setNome("Maria Conceição da Abadia");
 		//cliente.setTipo("Física");
 		//cliente.setCpfCnpj("045.938.553-99");
 		
-		//clientesFiltrados.add(cliente);
+		clientesFiltrados.add(cliente);
 		
-		//cliente = new Cliente();
-		//cliente.setNome("Supermercado Preço Bom Ltda");
+		cliente = new Cliente();
+		cliente.setNome("Supermercado Preço Bom Ltda");
 		//cliente.setTipo("Jurídica");
 		//cliente.setCpfCnpj("08.111.344/0001-12");
 		
-		//clientesFiltrados.add(cliente);
-	}*/
+		clientesFiltrados.add(cliente);
+	}
 	
 	public List<Endereco> getEnderecos(){
 		List<Endereco> enderecosCliente = new ArrayList<Endereco>();
