@@ -35,8 +35,9 @@
 				<p:password id="senha" size="20" maxlength="20" placeholder="*********" />
 			</p:panelGrid>
 	
-			<!-- <p:panelGrid columns="2" style="margin-top: 20px">
+			<p:panelGrid columns="2" style="margin-top: 20px">
 				<p:selectOneMenu>
+					<f:selectItem  itemLabel="Adiministradores"/>
 					<f:selectItems value="#{cadastroUsuarioBean.grupos}"  var="grupo"
 						itemLabel="#{grupo.descricao}" itemValue="#{grupo.descricao}"/>
 				</p:selectOneMenu>
@@ -53,7 +54,7 @@
 				</p:column>
 			</p:dataTable>
 			
-			<p:confirmDialog header="Exclusão de grupo de usuário" message="Tem cererteza que deseja excluir o grupo?"
+			<!-- <p:confirmDialog header="Exclusão de grupo de usuário" message="Tem cererteza que deseja excluir o grupo?"
 				widgetVar="comfirmaExclusao">
 				<p:button value="Não" onclick="PF('comfirmaExclusao').hide(); return false"/>
 				<p:commandButton value="Sim" oncomplete="PF('comfirmaExclusao').hide();"/>
