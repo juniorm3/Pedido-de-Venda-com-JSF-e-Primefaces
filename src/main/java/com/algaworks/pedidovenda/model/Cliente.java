@@ -12,6 +12,7 @@ public class Cliente implements Serializable {
 	private String nome;
 	private String email;
 	private String documentoReceitaFederal;
+	private TipoPessoa tipo;
 	private List<Endereco> enderecos = new ArrayList<>();
 
 	public Long getId() {
@@ -44,6 +45,14 @@ public class Cliente implements Serializable {
 
 	public void setDocumentoReceitaFederal(String documentoReceitaFederal) {
 		this.documentoReceitaFederal = documentoReceitaFederal;
+	}
+
+	public TipoPessoa getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoPessoa tipo) {
+		this.tipo = tipo;
 	}
 
 	public List<Endereco> getEnderecos() {
