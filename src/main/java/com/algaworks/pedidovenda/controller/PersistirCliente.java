@@ -15,11 +15,11 @@ import com.algaworks.pedidovenda.model.TipoPessoa;
 
 @Named
 @RequestScoped
-public class TestePersistencia implements Serializable{
+public class PersistirCliente implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
-	public void persistir() {
+	public void salvarCliente() {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("PedidoPU");
 		EntityManager manager = factory.createEntityManager();
 		
