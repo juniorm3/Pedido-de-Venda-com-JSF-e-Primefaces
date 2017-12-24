@@ -10,8 +10,9 @@
 	<ui:define name="corpo">
 		<br/><br/><br/>Seja bem-vindo!<br/><br/><br/>
 		
-		<!-- <p:commandButton value="Testar" actionListener="#{persistirUsuario.salvarUsuario()}"/> -->
-		<p:commandButton value="Testar" actionListener="#{persistirCliente.salvarCliente}"/>
+		<p:commandButton value="Gravar Usuario" actionListener="#{persistirUsuario.salvarUsuario}"/>
+		<p:commandButton value="Gravar Cliente" actionListener="#{persistirCliente.salvarCliente}"/>
+		<p:commandButton value="Gravar Produto" actionListener="#{persistirProduto.salvarProduto}"/>
 	</ui:define>
 	
 </ui:composition>

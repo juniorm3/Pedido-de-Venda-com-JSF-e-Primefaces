@@ -36,7 +36,7 @@ public class Usuario implements Serializable {
 		this.id = id;
 	}
 
-	@Column(nullable = false, length = 100)
+	@Column(nullable = false, length = 80)
 	public String getNome() {
 		return nome;
 	}
@@ -45,7 +45,7 @@ public class Usuario implements Serializable {
 		this.nome = nome;
 	}
 
-	@Column(nullable = false, length = 160, unique = true)
+	@Column(nullable = false, length = 255, unique = true)
 	public String getEmail() {
 		return email;
 	}
@@ -54,7 +54,7 @@ public class Usuario implements Serializable {
 		this.email = email;
 	}
 
-	@Column(nullable = false, length = 12)
+	@Column(nullable = false, length = 20)
 	public String getSenha() {
 		return senha;
 	}
